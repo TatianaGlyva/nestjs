@@ -7,7 +7,7 @@ const allUsers = [
 
 @Controller('users')
 
-export class TestController {
+export class UserController {
     @Get(':id')
         getHello(@Param('id') id){
         return allUsers.find( el => el.id === Number(id))
